@@ -26,7 +26,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.form button,button {
+.form button,button, input[type=submit]{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -95,4 +95,39 @@ body {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   
+}
+
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px; 
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:790px;
+
+ 
+}
+
+#btnBusca{
+  background: green;
+  height: 25px
+  width: 80px;
+  float: left;
+  margin-left: 80%;
+  margin-top: -40px;
+  border: none;
+
+}
+ 
+ 
+#divBusca{
+  background: white;
+ 
+  margin-bottom: 50px;
+  border:solid 5px green;
+  border-radius:10px;
+  height:35px;
+  width:70%;
 }

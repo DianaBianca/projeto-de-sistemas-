@@ -18,7 +18,7 @@
     <div class="login-page">
         <div class="form">
           <center><h1>Cadastro Livraria Online</h1></center>
-          <form method="GET" action="index.html">
+           <form name="incCliente" action="../controllers/insere.php" method=POST>
         <div>
                 <input type="text" name="nome" id="idnome" maxlength="10"  placeholder="Nome" required>
             </div>
@@ -34,19 +34,20 @@
             </div>
 
             <div>
-                 <input type="email" name="Email" id="idemail" placeholder="E-mail" required>
+                 <input type="email" name="email" id="idemail" placeholder="E-mail" required>
             </div>
 
             <div>
                 <input type="email" name="Emailconfirmacao" id="idemailconfirmacao" placeholder="Confirme seu E-mail" required autocomplete="off">
             </div>
 
-            <button type="submit">Enviar</button>
-
+            
+			<input type="submit" value="Cadastrar" id="cad">
             <button type="reset">Limpar </button>
-           
+            </form>
+			
         </div>
-    </form>
+   
         </div>
       </div>
 

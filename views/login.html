@@ -18,11 +18,11 @@
     <div class="login-page">
         <div class="form">
           <center><h3>Livraria Online</h3></center>
-          <form class="login-form">
-            <input type="text" placeholder="E-mail" required />
-            <input type="password" placeholder="Senha" required/>
-            <button>Entrar</button>
-            <p class="message">Não tem cadastro? <a href="#">Fazer cadastro</a></p>
+          <form class="login-form" action="../controllers/verifica_usuario.php" method="post">
+            <input type="text" name="usuario" placeholder="E-mail" required />
+            <input type="password" name="senha" placeholder="Senha" required/>
+            <input type="submit" name="Submit" value="Entrar">
+            <p class="message">Não tem cadastro? <a href="cadastro.html">Fazer cadastro</a></p>
           </form>
         </div>
       </div>
