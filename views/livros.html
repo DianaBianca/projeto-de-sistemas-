@@ -7,25 +7,26 @@
     
     <link rel="stylesheet" type="text/css" href="../controllers/style.css" media="screen" />
 
-
-
-
-
     <title>Entrar</title>
 </head>
 
 
 <body>
 
-	<center>	<div id="divBusca">
-			  <input type="text" id="txtBusca" placeholder="Buscar..."/>
-			  <button type="submit" id="btnBusca">Buscar</button>
-			  
-		</div><center>
-
   <div class="livros">
-        
-          
+    
+              <div>
+                <input type="text" id="divBusca" placeholder="Buscar..."/>
+                  <select name="genero" id="idgenero">
+                    <option disabled selected>Filtrar por Gênero</option>
+                    <option value="TER">Terror</option>
+                    <option value="INF">Informática</option>
+                    <option value="ROM">Romance</option>
+                  </select>
+                  <button type="submit" id="btnBusca">Buscar</button>
+                  
+              </div>
+
           <div class="listalivro">
             <center> 
               <img src="imagens/livro1.jpg" width="50% " alt="livro 1">
