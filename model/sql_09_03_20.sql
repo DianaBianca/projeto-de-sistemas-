@@ -53,7 +53,6 @@ CREATE  TABLE IF NOT EXISTS `Autor` (
   `nome` VARCHAR(45) NOT NULL ,
   `Cat_idCat` INT NOT NULL ,
   PRIMARY KEY (`idAutor`) )
-  
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
@@ -131,38 +130,3 @@ USE `mydb` ;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-
-ALTER TABLE Autor
-ADD FOREIGN KEY (Cat_idCat) REFERENCES Cat(idCat);
-
-ALTER TABLE Livro
-ADD FOREIGN KEY (Cat_idCat) REFERENCES Cat(idCat);
-
-ALTER TABLE Livro
-ADD FOREIGN KEY (Autor_idAutor) REFERENCES Autor(idAutor);
-
-
-ALTER TABLE Emprestimo
-ADD FOREIGN KEY (Usuario_Prontuario) REFERENCES Usuario(Prontuario);
-
-
-ALTER TABLE Emprestimo
-ADD FOREIGN KEY (Livro_idLivro) REFERENCES Livro(idLivro);
-
-
-ALTER TABLE Agendar
-ADD FOREIGN KEY (Usuario_Prontuario) REFERENCES Usuario(Prontuario);
-
-
-ALTER TABLE Agendar
-ADD FOREIGN KEY (Livro_idLivro) REFERENCES Livro(idLivro);
-
-
-ALTER TABLE Comentario
-ADD FOREIGN KEY (Usuario_Prontuario) REFERENCES Usuario(Prontuario);
-
-
-ALTER TABLE Comentario
-ADD FOREIGN KEY (Livro_idLivro) REFERENCES Livro(idLivro);
-

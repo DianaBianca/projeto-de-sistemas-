@@ -137,3 +137,10 @@ body {
   border-radius:10px;
 
 }
+
+table, th, tr, th, td{
+  border: 2px solid green;
+  border-collapse: collapse;
+  
+}
+
