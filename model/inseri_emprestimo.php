@@ -9,7 +9,7 @@ $data = date('Y-m-d');
 session_start();
  $prontuario = $_SESSION['Prontuario']; 
 if($con){
-    $sql = "insert into emprestimo values('$id','$data', '$prontuario','$nome')";
+    $sql = "insert into Emprestimo values('$id','$data', '$prontuario','$nome')";
     $rs = mysqli_query($con, $sql);
     if($rs){
 		

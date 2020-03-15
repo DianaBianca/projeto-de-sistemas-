@@ -8,7 +8,7 @@ $livro_idlivro = $_POST['Livro_idLivro'];
 
 
 if($con){
-    $sql = "insert into agendar values('$idEmprestimo','$data', '$usuario_prontuario','$Livro_idLivro')";
+    $sql = "insert into Agendar values('$idEmprestimo','$data', '$usuario_prontuario','$Livro_idLivro')";
     $rs = mysqli_query($con, $sql);
     if($rs){
 		

@@ -3,7 +3,7 @@ include "../controllers/conecta.php";
 
 $id = $_GET['idAgendar'];
 if($con){
-    $sql = "DELETE FROM agendar
+    $sql = "DELETE FROM Agendar
     where idEmprestimo = $id;";
     $rs = mysqli_query($con, $sql);
     if($rs){
